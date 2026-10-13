@@ -1,0 +1,11 @@
+<h1>My Worlds</h1>
+
+{% for world in worlds %}
+    <div>
+        <h2>{{ world.name }}</h2>
+        <p>{{ world.about }}</p>
+    </div>
+{% empty %}
+    <p>You have no worlds yet.</p>
+    <a href="#">Create a world</a>
+{% endfor %}

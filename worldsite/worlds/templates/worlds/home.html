@@ -44,6 +44,12 @@
     color: #0a4a7e;
     border-color: #f8fba6;
   }
+
+    @media (min-width: 900px) {
+    body {
+      background-position: center 70%;
+    }
+  }
 </style>
 
 <div class="panel">
@@ -51,7 +57,7 @@
   <p>Make worlds. Feel them come alive.</p>
   <ul>
     <li><a href="/create/">Create</a></li>
-    <li><a href="/my-worlds/">My world</a></li>
+    <a href="{% url 'my_worlds' %}">My world</a>
   </ul>
 </div>
 
