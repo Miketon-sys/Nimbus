@@ -1,6 +1,57 @@
-<h1>World Builder</h1>
-<ul>
-  <li><a href="/explore/">Explore</a></li>
-  <li><a href="/create/">Create</a></li>
-  <li><a href="/my-worlds/">My world</a></li>
-</ul>
+{% load static %}
+
+<style>
+  body {
+    background-color: #0a4a7e;
+    background-image: url("{% static 'worlds/nimbus-background.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    color: #e4ebfb;
+    font-family: Georgia, serif;
+    text-align: center;
+  }
+
+
+  .panel {
+    background-color: rgba(10, 40, 80, 0.75);
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    color: #f8fba6;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    color: #e4ebfb;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #8ec5e0;
+    border-radius: 8px;
+    padding: 10px 24px;
+    margin: 6px;
+  }
+
+  a:hover {
+    background-color: #f8fba6;
+    color: #0a4a7e;
+    border-color: #f8fba6;
+  }
+</style>
+
+<div class="panel">
+  <h1>Nimbus</h1>
+  <p>Make worlds. Feel them come alive.</p>
+  <ul>
+    <li><a href="/create/">Create</a></li>
+    <li><a href="/my-worlds/">My world</a></li>
+  </ul>
+</div>
+
